@@ -1,0 +1,76 @@
+<div class = "posts">
+
+    {{#if posts }}
+
+        {{#each posts }}
+
+            {{> post }}
+
+        {{/each}}
+
+    {{/if}}
+
+</div>
+
+<div id = "links" >
+
+    <button type="button" id="not_none"> <a href = "/newest"  id="newest_post"> newest </a> </button>
+
+    <button type="button" id="not_none"> <a href = "/oldest"  id="oldest_post"> oldest </a> </button>
+
+    <button type="button" id="not_none"> <a href = "/not_so_liked"  id="not_not_so_liked"> not not so liked </a> </button>
+
+    <button type="button" id="not_none"> <a href = "/not_not_so_liked"  id="not_so_liked"> not so liked </a> </button>
+
+</div>
+
+<div class="filter-input-container">
+    <label for="post_text" class="filter-input-label"> Blog Post : </label>
+    <div class="filter-input-element">
+        <input type="text" name="filter-text" id="post_text" class="filter-input">
+    </div>
+</div>
+
+<div class="filter-input-container">
+    <label for="photo_url" class="filter-input-label"> Photo Url : </label>
+    <div class="filter-input-element">
+        <input type="text" name="filter-text" id="photo_url" class="filter-input">
+    </div>
+</div>
+
+<button type="button" id="post_blog"><i > <a href="/oldest">   post </a> </i> </button>
+
+<div class="filter-input-container">
+    <label for="id_liking" class="filter-input-label"> Id Liking : </label>
+    <div class="filter-input-element">
+        <input type="text" name="filter-text" id="id_liking" class="filter-input">
+    </div>
+</div>
+
+<button type="button" id="like_some"> <i ><a href="/oldest"> heart </a>  </i> </button>
+
+<div class="filter-input-container">
+    <label for="id_delete" class="filter-input-label"> Id Delete : </label>
+    <div class="filter-input-element">
+        <input type="text" name="filter-text" id="id_delete" class="filter-input">
+    </div>
+</div>
+
+<button type="button" id="delete_post"> <i ><a href="/oldest"> trash </a> </i> </button>
+
+<div class="filter-input-container">
+    <label for="comment_id" class="filter-input-label"> Id : </label>
+    <div class="filter-input-element">
+        <input type="text" name="filter-text" id="comment_id" class="filter-input">
+    </div>
+</div>
+
+<div class="filter-input-container">
+    <label for="paragraphs_comment" class="filter-input-label"> Paragraphs </label>
+    <div class="filter-input-element">
+        <input type="text" name="filter-text" id="paragraphs_comment" class="filter-input">
+    </div>
+</div>
+
+<button type="button" id="commenting"> <i ><a href="/oldest"> Comment </a> </i> </button>
+

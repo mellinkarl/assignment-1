@@ -1,0 +1,47 @@
+<section class="post" id = "{{ id }}" >
+
+    <div class="profile-img-container">
+        <img class="profile-img" src="{{photoURL}}" />
+    </div>
+
+    <div class="post-info-container">
+
+        <div class="post-text">
+            <p> Post Data : {{postText}} </p>
+        </div>
+
+        <div class="post-username">
+            <p> Post User : {{username}} </p>
+        </div>
+
+        <div class="post-date">
+            <p> Identifier : {{id}} </p>
+        </div>
+
+        <div class="post-likes">
+            <p> Like Number : {{likes}} </p>
+        </div>
+
+        <div id = "some_comments" >
+
+            {{#each comments }}
+
+                <div class = "now_comment" >
+
+                    <div class = "comment_post" >
+                        <p> Comment Now : {{ this.comment_post }} </p>
+                    </div>
+
+                    <div class = "comment_name" >
+                        <p> User Name : {{ this.comment_name }} </p>
+                    </div>
+
+                </div>
+
+            {{/each}}
+
+        </div>
+
+    </div>
+
+</section>
